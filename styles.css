@@ -1,0 +1,232 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+@font-face {
+    font-family: 'Bienetresocial';
+    src:url('Fonts/Bienetresocial/Bienetresocial.ttf.woff') format('woff'),
+        url('Fonts/Bienetresocial/Bienetresocial.ttf.svg#Bienetresocial') format('svg'),
+        url('Fonts/Bienetresocial/Bienetresocial.ttf.eot'),
+        url('Fonts/Bienetresocial/Bienetresocial.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gelasio-Medium';
+    src:url('Fonts/webfonts_Gelasio-Medium/Gelasio-Medium.ttf.woff') format('woff'),
+        url('Fonts/webfonts_Gelasio-Medium/Gelasio-Medium.ttf.svg#Gelasio-Medium') format('svg'),
+        url('Fonts/webfonts_Gelasio-Medium/Gelasio-Medium.ttf.eot'),
+        url('Fonts/webfonts_Gelasio-Medium/Gelasio-Medium.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    
+    background-image: linear-gradient(to right,#ff68c1,#ffda5b); 
+}
+
+#home{
+    background: url('images/img1.jpg') no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center bottom 84%;
+}
+
+nav{
+    background-color: #fff;
+    height: 50px;
+    width: 100%;
+    display: block;
+}
+
+nav ul{
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+nav ul li{
+    display: inline-flex;
+    line-height: 50px;
+    font-family: Georgia, serif;
+    letter-spacing: 1px;
+}
+
+.callCart{
+    position: relative;
+    top: 13px;
+    left: 220px;
+
+}
+
+.callCart img{
+    margin-right: 5px;
+}
+a{
+    text-decoration: none;
+    color: #000;
+    margin: 0 30px;
+    font-size: 20px;
+}
+
+.homePage{
+    background-color: rgba(209, 124, 122, 0.7);
+    color: #fff;
+    height: 230px;
+    width: 600px;
+    padding: 40px;
+    box-sizing: border-box;
+    position: relative;
+    top: 165px;
+    left: 75px;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+}
+
+.homePage > h1{
+    text-transform: uppercase;
+    font-size: 50px;
+}
+
+.homePage > p{
+    width: 410px;
+}
+
+.order{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 30px 20px;
+    grid-column-gap: 20px;
+    grid-row-gap: 30px;
+    height: 280px;
+}
+
+.item{
+    width: 270px;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 0 40px ;
+    cursor: pointer;
+    padding:15px;
+    display: inline-block;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    transition: 0.4s;
+    background-color:#f2f2f2 ;
+    height: 350px;
+    margin-left: 80px;
+}
+
+hr{
+    height: 100px;
+    border: none;
+}
+
+body > h1{
+    
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 30px;
+    font-family: Tahoma, sans-serif;
+    letter-spacing: 5px;
+
+}
+
+.item img{
+        width: 100%;
+        object-fit: cover;
+        cursor: pointer;
+        transition: 0.2s ease;
+    
+        height: 250px;
+        border-radius: 0 40px ;
+}
+
+.item h5{
+    padding: 5px;
+    text-align: center;
+}
+
+button{
+    padding: 10px 50px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    background-color: rgb(243, 168, 185);
+    font-size:18px;
+    font-weight: bold;
+    display: block;
+    margin: 0 auto;
+}
+
+
+@media (max-width: 785px){
+
+    nav{
+        background-color: #fff;
+        height: 280px;
+        width: 100%;
+    }
+
+    nav ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    nav ul li{
+        display: inline-flex;
+        justify-content: center;
+        line-height: 40px;
+        border-bottom: 2px solid #ecebe9;
+        border-bottom-width: thin;
+    }
+
+    .callCart{
+        position: relative;
+        margin: auto;
+        margin-left: 85px;
+        right: 50px;
+    }
+
+    .callCart img{
+        width: 20px;
+        height: 20px;
+    }
+
+    .homePage{
+        background-color: rgba(238, 192, 190, 0.7);
+        color: #fff;
+        height: 140px;
+        width: 350px;
+        padding: 20px;
+        box-sizing: border-box;
+        position: relative;
+        top: 50px;
+        left: 220px;
+    }
+}
+
+@media (max-width: 610px)
+{
+    .homePage{
+        background-color: rgba(209, 124, 122, 0.7);
+        color: #fff;
+        height: 140px;
+        width: 350px;
+        padding: 20px;
+        box-sizing: border-box;
+        position: relative;
+        top: 50px;
+        left: 75px;
+    }
+}
